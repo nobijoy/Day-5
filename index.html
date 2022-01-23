@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 
@@ -15,8 +17,22 @@
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ml-auto">
-                    <li><a href="" class="nav-link">Home</a> </li>
-                    <li><a href="" class="nav-link">About</a> </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Car Fixing</a> </li>
+                            <li><a href="" class="dropdown-item">Bike Fixing</a> </li>
+                            <li><a href="" class="dropdown-item">Car Washing</a> </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Car Fixing</a> </li>
+                            <li><a href="" class="dropdown-item">Bike Fixing</a> </li>
+                            <li><a href="" class="dropdown-item">Car Washing</a> </li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
                         <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Service</a>
                         <ul class="dropdown-menu">
@@ -25,15 +41,58 @@
                             <li><a href="" class="dropdown-item">Car Washing</a> </li>
                         </ul>
                     </li>
-                    <li><a href="" class="nav-link">Gallery</a> </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Gallery</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Car Fixing</a> </li>
+                            <li><a href="" class="dropdown-item">Bike Fixing</a> </li>
+                            <li><a href="" class="dropdown-item">Car Washing</a> </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-
-
+    <div class="carousel slide" data-ride="carousel" data-interval="1800" id="slider">
+        <ol class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/images.jpg" alt="" class="w-100" style="height:550px;" >
+                <div class="carousel-caption my-caption">
+                    <h1>This is Caption Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dignissimos ducimus excepturi explicabo nemo odio perferendis provident quidem rerum, sapiente sint vel voluptatum? Ad, deserunt dolor est eveniet quae quos!</p>
+                    <a href="" class="btn btn-dark">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="img/download.jpg" alt="" class="w-100 " style="height:550px;">
+                <div class="carousel-caption my-caption">
+                    <h1>This is Caption Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dignissimos ducimus excepturi explicabo nemo odio perferendis provident quidem rerum, sapiente sint vel voluptatum? Ad, deserunt dolor est eveniet quae quos!</p>
+                    <a href="" class="btn btn-dark">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/images%20(2).jpg" alt="" class="w-100" style="height:550px;">
+                <div class="carousel-caption my-caption">
+                    <h1>This is Caption Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dignissimos ducimus excepturi explicabo nemo odio perferendis provident quidem rerum, sapiente sint vel voluptatum? Ad, deserunt dolor est eveniet quae quos!</p>
+                    <a href="" class="btn btn-dark">Read More</a>
+                </div>
+            </div>
+        </div>
+        <a href="#slider" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
 
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/bootstrap.js"></script>
